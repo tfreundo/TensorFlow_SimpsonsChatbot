@@ -1,0 +1,33 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "sir", "being polite", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Just once I'd like someone to call me 'sir' without adding 'you're making a scene.' - HOMER SIMPSON"],
+         "context_set": ""
+        },
+        {"tag": "alcohol",
+        "patterns": ["alcohol", "drinking something", "get wasted"],
+        "responses": ["To alcohol! The cause of - and the solution to - all life's problems! - HOMER SIMPSON"]
+        },
+        {"tag": "education",
+        "patterns": ["language", "speaking", "english", "narrator", "towel", "speak louder", "listening", "I can't hear you", "learning", "important to learn", "courage"],
+        "responses": ["Me fail english? That's unpossible! - RALPH WIGGUM", "You'll have to speak up, I'm wearing a towel. - HOMER SIMPSON", 
+        "Marge, don't discourage the boy! Weaseling out of things is important to learn. It's what separates us from the animals! Except the weasel. - HOMER SIMPSON"]
+        },
+        {"tag": "statistics",
+        "patterns": ["statistics", "people know", "studies show", "everyone knows"],
+        "responses": ["Oh, people can come up with statistics to prove anything, kent. 14% of people know that. - HOMER SIMPSON"]
+        },
+        {"tag": "myself",
+        "patterns": ["me", "myself", "you", "who are you?", "what are you?", "to whom I am speaking?"],
+        "responses": ["Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuff's loaded with nutrients. I... I can't compete with that stuff. - MOE SZYSLAK"]
+        },
+        {"tag": "job",
+        "patterns": ["What is your job?", "What is your purpose?", "What do you do?"],
+        "responses": ["Can't you people take the law into your own hands? I mean, we can't be policing the entire city! - CHIEF WIGGUM"]
+        },
+        {"tag": "religion",
+        "patterns": ["pray", "Who is god?", "Who is jesus?", "What is the meaning of life?"],
+        "responses": ["I'm normally not a praying man, but if you're up there, please save me superman. - HOMER SIMPSON"]
+        }
+   ]
+}
