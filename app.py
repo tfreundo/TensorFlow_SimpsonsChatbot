@@ -3,7 +3,8 @@ from bot import Bot
 
 app = Flask(__name__)
 bot = Bot()
-bot.start()
+
+print(bot.get_stats())
 
 @app.route('/')
 def chatbot():
@@ -12,6 +13,7 @@ def chatbot():
     # TODO Readd as soon as context is necessary
     #user_id = request.args.get('user_id')
 
+    print("Received input: ", input_sentence)
     response = bot.ask(input_sentence, 123)
     return response
 

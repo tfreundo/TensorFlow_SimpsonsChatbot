@@ -15,10 +15,17 @@ from response_generator import ResponseGenerator
 
 class Bot:
 
+    def __init__(self):
+        self.intents = FileHelper.intents_load()
+        self.words, self.classes, self.train_x, self.train_y = FileHelper.training_data_load()
+        self.model = Model.gen_model(self.train_x, self.train_y)
+        self.model.load('model.tflearn')
+
+        self.respgen = ResponseGenerator(self.intents, self.words, self.classes, self.model)
+
     def train(self):
-        intents = FileHelper.intents_load()
         preprocessor = Preprocessor()
-        words, classes, documents = preprocessor.extract_info_from_intents(intents)
+        words, classes, documents = preprocessor.extract_info_from_intents(self.intents)
         print('Extracted from intents %d documents, %d classes and %d unique words' % (
             len(documents), len(classes), len(words)))
 
@@ -30,14 +37,30 @@ class Bot:
         training = Training()
         training.train(train_x, train_y)
 
-    def start(self):
-        # Load the data and model
-        self.intents = FileHelper.intents_load()
-        self.words, self.classes, self.train_x, self.train_y = FileHelper.training_data_load()
-        self.model = Model.gen_model(self.train_x, self.train_y)
-        self.model.load('model.tflearn')
-
-        self.respgen = ResponseGenerator(self.intents, self.words, self.classes, self.model)
-
     def ask(self, input_sentence, userId):
         return self.respgen.gen_response(input_sentence, userId)
+
+    def get_stats(self):
+        """Returns the statistics of this bot in the current trained status
+        """
+        stats = "\n\nBOT STATS: This bot currently knowns "
+        if self.intents:
+            categoryqty = 0
+            patternqty = 0
+            responseqty = 0
+
+            for intent in self.intents['intents']:
+                categoryqty += 1
+                patternqty += len(intent['patterns'])
+                responseqty += len(intent['responses'])
+        
+        stats += str(categoryqty)
+        stats += " Categories with in total "
+        stats += str(patternqty)
+        stats += " Input Patterns and "
+        stats += str(responseqty)
+        stats += " possible Responses"
+        stats += "\n\n"
+
+        return stats
+

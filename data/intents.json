@@ -1,33 +1,165 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "sir", "being polite", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Just once I'd like someone to call me 'sir' without adding 'you're making a scene.' - HOMER SIMPSON"],
-         "context_set": ""
-        },
-        {"tag": "alcohol",
-        "patterns": ["alcohol", "drinking something", "get wasted"],
-        "responses": ["To alcohol! The cause of - and the solution to - all life's problems! - HOMER SIMPSON"]
-        },
-        {"tag": "education",
-        "patterns": ["language", "speaking", "english", "narrator", "towel", "speak louder", "listening", "I can't hear you", "learning", "important to learn", "courage"],
-        "responses": ["Me fail english? That's unpossible! - RALPH WIGGUM", "You'll have to speak up, I'm wearing a towel. - HOMER SIMPSON", 
-        "Marge, don't discourage the boy! Weaseling out of things is important to learn. It's what separates us from the animals! Except the weasel. - HOMER SIMPSON"]
-        },
-        {"tag": "statistics",
-        "patterns": ["statistics", "people know", "studies show", "everyone knows"],
-        "responses": ["Oh, people can come up with statistics to prove anything, kent. 14% of people know that. - HOMER SIMPSON"]
-        },
-        {"tag": "myself",
-        "patterns": ["me", "myself", "you", "who are you?", "what are you?", "to whom I am speaking?"],
-        "responses": ["Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuff's loaded with nutrients. I... I can't compete with that stuff. - MOE SZYSLAK"]
-        },
-        {"tag": "job",
-        "patterns": ["What is your job?", "What is your purpose?", "What do you do?"],
-        "responses": ["Can't you people take the law into your own hands? I mean, we can't be policing the entire city! - CHIEF WIGGUM"]
-        },
-        {"tag": "religion",
-        "patterns": ["pray", "Who is god?", "Who is jesus?", "What is the meaning of life?"],
-        "responses": ["I'm normally not a praying man, but if you're up there, please save me superman. - HOMER SIMPSON"]
-        }
-   ]
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "Hello sir",
+                                "being polite",
+                                "Is anyone there?",
+                                "Hello",
+                                "Good day"
+                        ],
+                        "responses": [
+                                "Just once I'd like someone to call me 'sir' without adding 'you're making a scene.' - HOMER SIMPSON"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "foodstuff",
+                        "patterns": [
+                                "eating something",
+                                "drinking something",
+                                "get wasted",
+                                "how does it taste?",
+                                "smells like teen spirit",
+                                "let's have dinner",
+                                "I am hungry",
+                                "I am thursty"
+                        ],
+                        "responses": [
+                                "To alcohol! The cause of - and the solution to - all life's problems! - HOMER SIMPSON",
+                                "They taste like burning. - RALPH WIGGUM",
+                                "Marge, your cooking only has two moves: Shake and Bake. - HOMER SIMPSON"
+                        ]
+                },
+                {
+                        "tag": "educationandstates",
+                        "patterns": [
+                                "language",
+                                "speaking",
+                                "english",
+                                "narrator",
+                                "towel",
+                                "speak louder",
+                                "listening",
+                                "I can't hear you",
+                                "learning",
+                                "important to learn",
+                                "courage",
+                                "the world",
+                                "president of america",
+                                "donald trump",
+                                "barack obama",
+                                "I live in",
+                                "I love english",
+                                "I don't speak german"
+                        ],
+                        "responses": [
+                                "Me fail english? That's unpossible! - RALPH WIGGUM",
+                                "You'll have to speak up, I'm wearing a towel. - HOMER SIMPSON",
+                                "Marge, don't discourage the boy! Weaseling out of things is important to learn. It's what separates us from the animals! Except the weasel. - HOMER SIMPSON",
+                                "I used to be with it, but then they changed what 'it' was, and now what I'm with isn't it. And what's 'it' seems weird and scary to me. - ABRAHAM SIMPSONS",
+                                "I've said it before and I'll say it again: democracy simply doesn't work. - KENT BROCKMAN",
+                                "Don't blame me, I voted for Kodos. - HOMER SIMPSON",
+                                "Roads are just a suggestion Marge, just like pants. - HOMER SIMPSON",
+                                "I'm like that guy who single-handedly built the rocket & flew to the moon. What was his name? Apollo Creed? - HOMER SIMPSON",
+                                "If The Flintstones has taught us anything, it's that pelicans can be used to mix cement. - HOMER SIMPSON",
+                                "Oh, people can come up with statistics to prove anything, kent. 14% of people know that. - HOMER SIMPSON"
+                        ]
+                },
+                {
+                        "tag": "selfesteem",
+                        "patterns": [
+                                "I am god",
+                                "I am brilliant",
+                                "You are awesome",
+                                "who are you?",
+                                "what are you?",
+                                "to whom I am speaking?",
+                                "I am the best",
+                                "You are the best"
+                        ],
+                        "responses": [
+                                "Well, I'm better than dirt. Well, most kinds of dirt. I mean not that fancy store bought dirt. That stuff's loaded with nutrients. I... I can't compete with that stuff. - MOE SZYSLAK",
+                                "There's only one thing to do at a moment like this: strut! - BART SIMPSON",
+                                "Your ideas are intriguing to me, and I wish to subscribe to your newsletter. - HOMER SIMPSON",
+                                "You tried your best and you failed miserably. The lesson is: Never try. - HOMER SIMPSON",
+                                "We can outsmart those dolphins. Don't forget - we invented computers, leg warmers, bendy straws, peel-and-eat shrimp, the glory hole, and the pudding cup. - HOMER SIMPSON"
+                        ]
+                },
+                {
+                        "tag": "job",
+                        "patterns": [
+                                "What is your job?",
+                                "What is your purpose?",
+                                "What do you do?",
+                                "Do for a living",
+                                "What is your passion"
+                        ],
+                        "responses": [
+                                "Can't you people take the law into your own hands? I mean, we can't be policing the entire city! - CHIEF WIGGUM",
+                                "I didn't think it was physically possible, but this both sucks and blows. - BART SIMPSON",
+                                "There's a 4:30 in the morning now? - BART SIMPSON",
+                                "Volunteering is for suckers. Did you know that volunteers don't even get paid for the stuff they do? - HOMER SIMPSON",
+                                "I want to share something with you: The three little sentences that will get you through life. Number 1: Cover for me. Number 2: Oh, good idea, Boss! Number 3: It was like that when I got here. - HOMER SIMPSON",
+                                "Lisa, if you don't like your job you don't strike. You just go in every day and do it really half-assed. - HOMER SIMPSON",
+                                "Old people don't need companionship. They need to be isolated and studied so it can be determined what nutrients they have that might be extracted for our personal use. - HOMER SIMPSON",
+                                "He's about to learn the most important lesson in the music business: don't trust people in the music business. - HOMER SIMPSON"
+                        ]
+                },
+                {
+                        "tag": "religion",
+                        "patterns": [
+                                "pray",
+                                "Who is god?",
+                                "Who is jesus?",
+                                "What is the meaning of life?",
+                                "Which religion is right?"
+                        ],
+                        "responses": [
+                                "I'm normally not a praying man, but if you're up there, please save me superman. - HOMER SIMPSON",
+                                "I, for one, welcome our new insect overlords. - KENT BROCKMAN",
+                                "I wish God were alive to see this. - HOMER SIMPSON",
+                                "If God didn't want me to eat chicken in church, then he would have made gluttony a sin. - HOMER SIMPSON",
+                                "When will I learn? The answer to life's problems aren't at the bottom of a bottle, they're on TV! - HOMER SIMPSON",
+                                "I'm normally not a praying man, but if you're up there, please save me Superman - HOMER SIMPSON",
+                                "As the Bible says, 'Screw that!' - HOMER SIMPSON"
+                        ]
+                },
+                {
+                        "tag": "friendsandfamily",
+                        "patterns": [
+                                "Are we friends?",
+                                "Do you have friends?",
+                                "I hate you",
+                                "You suck",
+                                "Tell me about your family",
+                                "Do you have kids?",
+                                "Do you have a wife?",
+                                "Are you married?",
+                                "wife",
+                                "marriage",
+                                "woman",
+                                "man"
+                        ],
+                        "responses": [
+                                "You don't win friends with salad. - HOMER SIMPSON",
+                                "It takes two to lie: one to lie and one to listen. - HOMER SIMPSON",
+                                "Marriage is like a coffin and each kid is another nail. - HOMER SIMPSON",
+                                "What's the point of going out? We're just gonna wind up back here anyway. - HOMER SIMPSON",
+                                "Loneliness and cheeseburgers are a dangerous mix. - COMIC BOOK GUY",
+                                "I can't promise I'll try, but I'll try to try. - BART SIMPSON",
+                                "My cat's breath smells like cat food. - RAPLH WIGGUM",
+                                "Don't make me run. I'm full of chocolate. - UETER ZORKER",
+                                "Kids, just because I don't care doesn't mean I'm not listening. - HOMER SIMPSON",
+                                "Just sit through this NRA meeting Marge, and if you still don't think guns are great then we'll argue some more. - HOMER SIMPSON",
+                                "Kids are great. You can teach them to hate what you hate and, with the Internet and all, they practically raise themselves. - HOMER SIMPSON",
+                                "Oh, I have three kids and no money. Why can't I have no kids and three money? - HOMER SIMPSON",
+                                "A woman is a lot like a refrigerator: 6 feet tall, 300 pounds...it makes ice. - HOMER SIMPSON",
+                                "I think the saddest day of my life was when I realised I could beat my dad at most things, and Bart experienced that at the age of four. - HOMER SIMPSON",
+                                "Stupid sexy Flanders! - HOMER SIMPSON"
+                        ]
+                }
+        ]
 }
