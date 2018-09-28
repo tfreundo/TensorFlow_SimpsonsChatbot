@@ -14,4 +14,11 @@ docker run -d -p 5000:5000 --name vagvag simpsonsbot:latest
 ## Run with pre-trained model
 If you just want to experiment and use the model trained (training and model files available in this repo) you can just clone this repository, download all dependencies and execute the Flask REST-API via ```python -m flask run``` or ```python -m flask run --host=0.0.0.0``` if the REST-API should listen to external clients (not localhost only) as well.
 
-## Examples
+## Example for sending a Request
+Below you can see an example on how to request an answer from the Chatbot using its' REST-API.
+The REST Client used here is called 'Insomnia' but you could use any other client or browser as you wish.
+![requesting_via_REST](images/requesting_via_REST.png)
+
+## Example Server Output
+Below you can see an example of the server output. For every request the received Input and the prediction including the probability for the predicted class is logged.
+![example_server_output](images/example_server_output.png)
